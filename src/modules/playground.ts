@@ -104,7 +104,7 @@ export async function playgroundModule(bot: Bot) {
 }
 
 // Take care when messing with the truncation, it's extremely finnicky
-function createPlaygroundEmbed(
+async function createPlaygroundEmbed(
 	author: User,
 	{ url: _url, query, code, isEscaped }: PlaygroundLinkMatch,
 	url: string = _url,
