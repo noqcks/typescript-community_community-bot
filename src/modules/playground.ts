@@ -145,7 +145,7 @@ function createPlaygroundEmbed(
 		// Make lines as short as reasonably possible, so they fit in the embed.
 		// We pass prettier the full string, but only format part of it, so we can
 		// calculate where the endChar is post-formatting.
-		pretty = format(normalized, {
+		pretty = await format(normalized, {
 			parser: 'typescript',
 			printWidth: 55,
 			tabWidth: 2,
